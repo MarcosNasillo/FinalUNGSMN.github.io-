@@ -1,0 +1,279 @@
+a:active,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  margin: 0px;
+  font-family: "Roboto Slab", serif;
+  background-color: #fff59d;
+}
+
+.encabezado {
+  background-color: #fffde7;
+  height: 20px;
+}
+
+#encabezado2 {
+  text-align: center;
+  display: block !important;
+  min-height: 1px;
+  margin: auto;
+  color: inherit;
+}
+.titulo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 85px;
+  margin: 0px;
+  background-color: #fff9c4;
+}
+
+.titulo h1 {
+  margin: 0px;
+}
+
+.titulo ul {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.menu {
+  height: 25px;
+  width: 25px;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.imagenPrincipal {
+  justify-content: end;
+  position: static;
+}
+
+.spanVenta {
+  text-align: center;
+  transition: all 0.3s ease-in 0s;
+  color: #222;
+}
+
+.imgProductos,
+.imgProductos2,
+.imgProductos3 {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  /* background-image: url(../images/background2.jpg);
+  background-size: cover;
+  background-position: center; */
+  /* min-height: 100vh;
+  flex-direction: column;
+  background-color: black;
+  color: aliceblue; */
+}
+
+.imagen {
+  position: absolute;
+  margin-top: 10rem;
+  margin-left: 2rem;
+}
+
+.background {
+  width: 100%;
+}
+
+footer {
+  padding: 1em 2em;
+  margin-top: auto;
+  flex: auto;
+  display: block;
+  min-height: min-content;
+  background-color: #45454650;
+}
+
+footer .footerbox {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+footer .direccion {
+  color: inherit;
+  font-size: 0.55em;
+  flex: 1;
+}
+
+footer .copyright {
+  color: inherit;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/* Cartas */
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+/* Estilos para las secciones */
+section {
+  margin: 10px;
+  border-radius: 10px;
+  border-color: #222;
+  color: black;
+  background-color: #f8fdc6;
+  padding: 10px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  text-decoration: none;
+}
+
+.imagenes {
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  margin: 0px;
+  border-radius: 10px;
+}
+
+.imagenes2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  margin: 0px;
+  border-radius: 10px;
+}
+
+.mid {
+  text-align: center;
+}
+
+.imagenes:hover {
+  transform: scale(1.5);
+}
+
+section:hover {
+  color: rgb(204, 206, 106) !important;
+  box-shadow: 0 4px 16px rgb(71, 71, 68);
+  transition: all 0.2s ease;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.btn {
+  background-color: #eb6440;
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  font-family: "Forza Medium", sans-serif;
+}
+
+.btn:hover {
+  box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5),
+    0 0 20px rgba(49, 138, 172, 0.4);
+  outline-color: rgba(49, 138, 172, 0);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px #44aa83;
+}
+
+/* MODAL ROBADO SRY */
+
+#toggle {
+  visibility: hidden;
+  opacity: 0;
+  position: relative;
+  z-index: -1;
+}
+
+#toggle:checked ~ dialog {
+  display: block;
+}
+
+label {
+  background: rgb(189, 233, 250);
+  color: white;
+  padding: 10px 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+label:hover {
+  transform: scale(1.3);
+  background: #e1bee7;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+    filter: blur(1.5rem);
+  }
+}
+
+dialog {
+  animation: appear 350ms ease-in 1;
+  max-width: 500px;
+}
+/* modal */
+
+.nosotros {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+
+.nosotros2 {
+  margin: 20px;
+  padding: 20px;
+}
+
+.nosotros2 p {
+  width: 180px;
+}
+
+@media only screen and (max-width: 760px) {
+  .imagen {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    display: block;
+    margin: 0px;
+  }
+}
